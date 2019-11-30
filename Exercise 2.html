@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<title>Checkbox</title>
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+<script src="js/index.js"></script>
+</head>
+<body>
+    <div>
+        <h2>Exercise 2: Checkbox on Chage</h2>
+    </div>
+    <div>
+        <label name="checkbox1">Gender:</label>
+        <input type="checkbox" name="checkbox1" id="checkbox1" onclick="CheckboxAction()" />
+        <h3 id="res1"></h3>
+    </div>
+</body>
+<script>
+    function CheckboxAction() {
+        let val = confirm("Are you male");
+        if (val == true) {
+            document.getElementById('res1').innerHTML = "Hey, You are Male";
+            return true;
+        } else {
+            document.getElementById('res1').innerHTML = "Hey, You are Female";
+            return false;
+        }
+    }
+</script>
+</html>
