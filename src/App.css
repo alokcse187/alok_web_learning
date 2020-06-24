@@ -1,0 +1,90 @@
+.hw {
+  width: 50%;
+}
+
+.fw {
+  width: 100%;
+}
+
+.m50 {
+  margin: 50px;
+}
+
+.p25 {
+  padding: 25px;
+}
+
+.flex {
+  display: inline-flex;
+}
+
+.center {
+  text-align: center;
+}
+
+.heading {
+  width: 100%;
+  height: Auto;
+  text-align: center;
+  background-color: #add8e6;
+  font: 4vw arial;
+  font-weight: bolder;
+}
+
+.sideNav {
+  width: 100%;
+  height: 82vh;
+  
+}
+
+.sideNav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: #818181;
+  display: block;
+  line-height: 32px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.sideNav a:hover, .sideNav .active {
+  color: #f1f1f1;
+  background-color: lightseagreen;
+}
+
+.NavContent {
+  width: 15%;
+  border-right: 2px solid lightgrey;
+}
+
+.mainContent {
+  width: 85%;
+  margin-top: 10px;
+  overflow-y: scroll;
+}
+
+.imgSection {
+  margin: 10px 30px 10px 10px;
+}
+
+.detailSection {
+  margin: 10px;
+  padding: 50px 20px;
+  line-height: 30px;
+}
+
+.headContent {
+  font-weight: bold;
+  font-size: 15px;
+  width: 25%;
+}
+
+.detailcontent {
+  font-size: 14px;
+  width: 75%;
+}
+
+.profImag {
+  width: 80vh;
+  height: 75vh;
+}
