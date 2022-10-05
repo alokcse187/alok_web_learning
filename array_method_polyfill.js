@@ -1,6 +1,7 @@
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 const addTwo = item => item + 2;
 const isEven = item => item % 2 === 0;
+const add = (a,b) => a+b; 
 
 // array.filter's pollyfill
 if (!Array.prototype.myFilter) {
@@ -53,14 +54,15 @@ if (!Array.prototype.myEvery) {
 console.log(arr.myEvery(isEven));
 
 // array.reduce's pollyfill
-const add = (a,b) => a+b; 
 if(!Array.prototype.myReduce) {
    Array.prototype.myReduce = function(fn) {
     let accum = this[0]; 
     for(let i=1; i<=arr.length-1; i++) {
-      accum = fn(accum, this[i])
+      accum = fn(accum, this[i]);
     }
     return accum;
     } 
 }
+
+console.log(arr.myReduce(add));
 
